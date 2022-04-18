@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- SURVIVAL MODE CARDVIEWS -->
+
+            <!--MATH-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotoMath">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Math"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!--ANIMALS SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotoanimalsSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Animals Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotoanimalsSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--ENGINEERING SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotoengineeringSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Engineering Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotoengineeringSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--ENGLISH SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotoenglishSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="English Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotoenglishSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--FILIPINO SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotofilipinoSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Filipino Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotofilipinoSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--FOODS SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotofoodsSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Foods Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotofoodsSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--HISTORY SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotohistorySurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="History Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotohistorySHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--PLACES SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotoplacesSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Places Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotoplacesSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--PROGRAMMING SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotoprogrammingSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Programming Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotoprogrammingSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--RANDOM SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotorandomSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Random Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotorandomSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--SCIENCE SURVIVAL-->
+            <android.support.v7.widget.CardView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:onClick="gotoscienceSurvival">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="start|bottom"
+                            android:text="Science Survival"
+                            android:textColor="#000"
+                            android:textSize="30sp"
+                            android:fontFamily="casual"/>
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|bottom"
+                            style="?android:attr/actionOverflowButtonStyle"
+                            android:onClick="gotoscienceSHS" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

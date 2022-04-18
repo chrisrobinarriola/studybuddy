@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.botrobs.studybuddy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logofit"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainAppActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuizMakerFeature.CreateQuiz" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.botrobs.studybuddy.QuizMakerFeature.QuizMenu" />
+        </activity>
+        <activity android:name=".QuizMakerFeature.CreateQuestion" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.botrobs.studybuddy.QuizMakerFeature.CreateQuestion" />
+        </activity>
+        <activity android:name=".QuizMakerFeature.QuizMenu" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.botrobs.studybuddy.QuizMakerFeature.QuizMenu" />
+        </activity>
+        <activity android:name=".QuizMakerFeature.QuizMenuCreate" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.botrobs.studybuddy.QuizMakerFeature.QuizMenuCreate" />
+        </activity>
+        <activity android:name=".ChooseNormalActivity" android:screenOrientation="portrait" />
+        <activity android:name=".QMmainActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".FeedBackActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".QuizMakerFeature.PlayQuiz"  android:screenOrientation="portrait"/>
+        <activity android:name=".QuizMakerFeature.ScoreScreen"  android:screenOrientation="portrait"/>
+        <activity android:name=".QuizMakerFeature.StatScreen"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.RandomCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.ProgrammingCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.ScienceCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.FilipinoCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.EnglishCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.HistoryCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.AnimalsCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.FoodsCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.PlacesCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.EngineeringCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.MathCategory"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.MathCategoryAddition"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.MathCategorySubtraction"  android:screenOrientation="portrait"/>
+        <activity android:name=".BIquizCategories.MathCategoryMultiplication"  android:screenOrientation="portrait"/>
+        <activity android:name=".survival.AnimalsCategorySurvival"  android:screenOrientation="portrait"/>
+        <activity android:name=".survival.EngineeringCategorySurvival" android:screenOrientation="portrait" />
+        <activity android:name=".survival.EnglishCategorySurvival"  android:screenOrientation="portrait"/>
+        <activity android:name=".survival.FilipinoCategorySurvival"  android:screenOrientation="portrait"/>
+        <activity android:name=".survival.FoodsCategorySurvival" android:screenOrientation="portrait" />
+        <activity android:name=".survival.HistoryCategorySurvival"  android:screenOrientation="portrait"/>
+        <activity android:name=".survival.PlacesCategorySurvival" android:screenOrientation="portrait" />
+        <activity android:name=".survival.ProgrammingCategorySurvival"  android:screenOrientation="portrait"/>
+        <activity android:name=".survival.RandomCategorySurvival" android:screenOrientation="portrait" />
+        <activity android:name=".survival.ScienceCategorySurvival"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.RandomHighScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.ProgrammingHighScoreActivity" android:screenOrientation="portrait" />
+        <activity android:name=".highscores.ScienceHighScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.HistoryHighScoreActivity" android:screenOrientation="portrait" />
+        <activity android:name=".highscores.AnimalsHighScoreActivity" android:screenOrientation="portrait" />
+        <activity android:name=".highscores.FoodsHighScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.FilipinoHighScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.PlacesHighScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.EnglishHighScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.EngineeringHighScoreActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".highscores.AdditionHighScoreActivity" android:screenOrientation="portrait" />
+        <activity android:name=".highscores.SubtractionHighScoreActivity" android:screenOrientation="portrait" />
+        <activity android:name=".highscores.MultiplicationHighScoreActivity" android:screenOrientation="portrait" />
+        <activity android:name=".AllHighScoresActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".ChooseTabActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".ChooseSurvivalActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

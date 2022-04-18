@@ -1,0 +1,241 @@
+package com.apps.botrobs.studybuddy;
+
+import android.content.Intent;
+import android.graphics.Color;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Random;
+
+public class FeedBackActivity extends AppCompatActivity {
+
+    TextView TVfacts;
+
+    String[] facts = {"Did you know? 11% of people are left handed",
+            "Did you know? August has the highest percentage of births",
+            "Did you know? Unless food is mixed with saliva you can't taste it",
+            "Did you know? The average person falls asleep in 7 minutes",
+            "Did you know? Bear has 42 teeth",
+            "Did you know? An ostrich's eye is bigger than its brain",
+            "Did you know? Lemons contain more sugar than strawberries",
+            "Did you know? 8% of people have an extra rib",
+            "Did you know? Ralph Lauren's original name was Ralph Lifshitz",
+            "Did you know? Rabbits like licorice",
+            "Did you know? The Hawaiian alphabet has 13 letters",
+            "Did you know? 'Topolino' is the name for Mickey Mouse Italy",
+            "Did you know? A lobsters blood is colorless but when exposed to oxygen it turns blue",
+            "Did you know? Armadillos have 4 babies at a time and are all the same sex",
+            "Did you know? Reindeer like bananas",
+            "Did you know? The longest recorded flight of a chicken was 13 seconds",
+            "Did you know? Birds need gravity to swallow",
+            "Did you know? The most commonly used letter in the alphabet is E",
+            "Did you know? The 3 most common languages in the world are Mandarin Chinese, Spanish and English",
+            "Did you know? Dreamt is the only word that ends in mt",
+            "Did you know? The first letters of the months July through to November spell JASON",
+            "Did you know? A cat has 32 muscles in each ear",
+            "Did you know? Perth is Australia's windiest city",
+            "Did you know? Elvis’s middle name was Aron",
+            "Did you know? Goldfish can see both infrared and ultraviolet light",
+            "Did you know? The smallest bones in the human body are found in your ear",
+            "Did you know? Cats spend 66% of their life asleep",
+            "Did you know? Switzerland eats the most chocolate equating to 10 kilos per person per year",
+            "Did you know? Money is the number one thing that couples argue about",
+            "Did you know? Macadamia nuts are toxic to dogs",
+            "Did you know? When lightning strikes it can reach up to 30,000 degrees Celsius (54,000 degrees Fahrenheit)",
+            "Did you know? Spiders are arachnids and not insects",
+            "Did you know? Each time you see a full moon you always see the same side",
+            "Did you know? Stewardesses is the longest word that is typed with only the left hand",
+            "Did you know? Honey is the only natural food which never spoils",
+            "Did you know? M&M's chocolate stands for the initials for its inventors Mars and Murrie",
+            "Did you know? That you burn more calories eating celery than it contains (the more you eat the thinner you become)",
+            "Did you know? The only continent with no active volcanoes is Australia",
+            "Did you know? The longest street in the world is Yonge street in Toronto Canada measuring 1,896 km (1,178 miles)",
+            "Did you know? About 90% of the world’s population kisses",
+            "Did you know? Coca-Cola originally contained cocaine",
+            "Did you know? The Internet was originally called ARPANet (Advanced Research Projects Agency Network) designed by the US department of defense",
+            "Did you know? Toilets use 35% of indoor water use",
+            "Did you know? The fortune cookie was invented in San Francisco",
+            "Did you know? Koalas sleep around 18 hours a day",
+            "Did you know? The first Burger King was opened in Florida Miami in 1954",
+            "Did you know? All insects have 6 legs",
+            "Did you know? The croissant was invented in Austria",
+            "Did you know? In eastern Africa you can buy beer brewed from bananas",
+            "Did you know? African Grey Parrots have vocabularies of over 200 words",
+            "Did you know? A giraffe can clean its ears with its 21 inch tongue",
+            "Did you know? Australia was originally called New Holland",
+            "Did you know? ‘Lonely Planet' for travelers is based in Melbourne Australia",
+            "Did you know? The sentence 'the quick brown fox jumps over the lazy dog' uses every letter in the English alphabet",
+            "Did you know? The Grand Canyon can hold around 900 trillion footballs",
+            "Did you know? All the blinking in one day equates to having your eyes closed for 30 minutes",
+            "Did you know? Your foot has 26 bones in it",
+            "Did you know? The average human brain contains around 78% water",
+            "Did you know? 1 nautical knot equates to 1.852 Kph (1.150 mph)",
+            "Did you know? If you add up all the numbers from 1 to 100 consecutively (1 + 2 + 3...) it totals 5050",
+            "Did you know? Sponges hold more cold water than hot",
+            "Did you know? Lightning strikes the Earth 6,000 times every minute",
+            "Did you know? Fire usually moves faster uphill than downhill",
+            "Did you know? Cats have over 100 vocal chords",
+            "Did you know? Camel’s milk doesn't curdle",
+            "Did you know? Elephants sleep between 4 - 5 hours in 24 period",
+            "Did you know? It’s possible to lead a cow up stairs but not down",
+            "Did you know? Frogs can't swallow with their eyes open",
+            "Did you know? Elephants are the only mammal that can't jump",
+            "Did you know? A 1/4 of your bones are in your feet",
+            "Did you know? YYour tongue is the fastest healing part of your body",
+            "Did you know? On your birthday you share it with 9 million others",
+            "Did you know? 1 googol is the number 1 followed by 100 zeros",
+            "Did you know? A 1 minute kiss burns 26 calories",
+            "Did you know? You burn more calories sleeping than watching TV",
+            "Did you know? Frogs don't usually swallow water (they absorb most of the moisture they need through their skin)",
+            "Did you know? At birth Dalmatians are always white",
+            "Did you know? Hummingbirds are the only bird that can fly backwards",
+            "Did you know? A duck can't walk without bobbing its head",
+            "Did you know? A hummingbird's heart beats at over a 1,000 times a minute",
+            "Did you know? Dragonflies have 6 legs but can't walk",
+            "Did you know? A crocodile can't move its tongue",
+            "Did you know? That the first MTV video played was 'Video killed the radio star' by the Buggles",
+            "Did you know? In 1878 the first telephone book made contained only 50 names",
+            "Did you know? Pop corn was invented by the Aztec Indians",
+            "Did you know? An average person will spend 25 years asleep",
+            "Did you know? Hippopotamuses have killed more people in Africa than any other animal",
+            "Did you know? An elephants ears are used to regulate body temperature",
+            "Did you know? The Arctic Ocean is the smallest in the world",
+            "Did you know? The most common mental illnesses are anxiety and depression",
+            "Did you know? The word laser stands for 'Light Amplification by Stimulated Emission of Radiation'",
+            "Did you know? Crocodiles never outgrow their enclosure",
+            "Did you know? Reindeer hair is hollow inside like a tube",
+            "Did you know? Your skin is the largest organ making up the human body",
+            "Did you know? Cows don't have upper front teeth",
+            "Did you know? Every day is a holiday somewhere in the world",
+            "Did you know? The coins thrown into the Trevi fountain in Italy are collected for charity",
+            "Did you know? French-fries are originally from Belgium",
+            "Did you know? There are 31,557,600 seconds in a year",
+            "Did you know? There are 22 stars in the Paramount studios logo",
+            "Did you know? Black on yellow are the 2 colors with the strongest impact",
+            "Did you know? The safest car color is white",
+            "Did you know? The most commonly forgotten item for travelers is their toothbrush",
+            "Did you know? An octopus pupil is rectangular",
+            "Did you know? The hyoid bone in your throat is the only bone in your body not attached to any other",
+            "Did you know? The Australian aircraft carrier QANTAS stands for Queensland And Northern Territories Aerial Service",
+            "Did you know? The movie Pulp Fiction cost $8 million to make with $5 million going towards actor's salaries",
+            "Did you know? There are only 4 words in the English language which end in 'dous' (they are: hazardous, horrendous, stupendous and tremendous)",
+            "Did you know? The oldest word in the English language is 'town'",
+            "Did you know? Cats can't move their jaw sideways",
+            "Did you know? Grapes explode when you put them in the microwave",
+            "Did you know? Its physically impossible for pigs to look up at the sky",
+            "Did you know? Your most sensitive finger is your index finger (closest to your thumb)",
+            "Did you know? ‘Bookkeeper' and 'bookkeeping' are the only 2 words in the English language with three consecutive double letters",
+            "Did you know? Venetian blinds were invented in Japan",
+            "Did you know? The average golf ball has 336 dimples",
+            "Did you know? The word 'Strengths' is the longest word in the English language with just one vowel",
+            "Did you know? The movie 'Wayne's World' was filmed in two weeks",
+            "Did you know? The Amazon rainforest produces half the world's oxygen supply",
+            "Did you know? A group of frogs is called an army",
+            "Did you know? A group of rhinos is called a crash",
+            "Did you know? A group of kangaroos is called a mob",
+            "Did you know? A group of whales is called a pod",
+            "Did you know? A group of geese is called a gaggle",
+            "Did you know? A group of owls is called a parliament",
+            "Did you know? The first sailing boats were built in Egypt",
+            "Did you know? Brazil is named after a tree",
+            "Did you know? Brazil covers 50% of the South American continent",
+            "Did you know? Brazil borders every country in South America except Chile and Ecuador",
+            "Did you know? Hilton was the first international hotel chain",
+            "Did you know? The brand Nokia is named after a place in Southern Finland",
+            "Did you know? Monopoly is the most played board game in the world",
+            "Did you know? 96% of candles sold are purchased by women",
+            "Did you know? 42% of men and women 25% don’t wash their hands after using a public toilet",
+            "Did you know? If you filled a matchbox with gold it could be flattened into a sheet the size of a tennis court",
+            "Did you know? Jamaica has 120 rivers",
+            "Did you know? A cats urine glows under a black light",
+            "Did you know? White cats with blue eyes are usually deaf",
+            "Did you know? Cats have a peripheral vision of 285 degrees",
+            "Did you know? Small dogs usually live longer than larger breeds",
+            "Did you know? Domestic cats dislike citrus scents",
+            "Did you know? Cats can jump up to 7 times their tail length",
+            "Did you know? China manufacturers 70% of the worlds toys",
+            "Did you know? The Great Wall of China is approximately 6,430 Km long (3,995 miles)",
+            "Did you know? Paper originated from China",
+            "Did you know? The wheelbarrow is invented in China",
+            "Did you know? Tree hugging is forbidden in china",
+            "Did you know? The film 'Mary Poppins' was filmed entirely indoors",
+            "Did you know? All of the clocks in the movie 'Pulp Fiction' are fixed to 4:20",
+            "Did you know? Instant coffee was invented in 1901",
+            "Did you know? The human body of a 70 kg person contains 0.2mg of gold",
+            "Did you know? Rice is the staple food for 50% of the world’s population",
+            "Did you know? Pearls melt in vinegar",
+            "Did you know? A hardboiled eggs spin (uncooked or soft boiled don’t)",
+            "Did you know? There is no butter in buttermilk",
+            "Did you know? Giraffes and rats can last longer without water than camels",
+            "Did you know? The dot on top of the letter 'I' is called a tittle",
+            "Did you know? The electric chair was invented by a dentist",
+            "Did you know? You’re more likely to be killed by a champagne cork than by a poisonous spider",
+            "Did you know? A crocodile can't stick out its tongue",
+            "Did you know? Rubber bands last longer when kept refrigerated",
+            "Did you know? Women blink twice as much as men",
+            "Did you know? Ostriches don't bury their heads in sand",
+            "Did you know? Only female mosquitoes bite",
+            "Did you know? Scotland has the most redheads",
+            "Did you know? Household dust is made of dead skin cells",
+            "Did you know? The past tense for the English word 'dare' is 'durst'",
+            "Did you know? Hummingbirds can't walk",
+            "Did you know? Wind doesn’t make a sound until it blows against an object",
+            "Did you know? The naming of tropical storms and hurricanes officially began in 1953",
+            "Did you know? India has the most post offices than any other country (over 100,000)",
+            "Did you know? India is home to over 200 million cows",
+            "Did you know? The Taj Mahal in India is made entirely out of marble",
+            "Did you know? Bali has the world’s largest variety of flora",
+            "Did you know? Bill Gates began programming computers at the of age 13",
+            "Did you know? Every single possible 3 character .com domain has been registered",
+            "Did you know? The word 'uncopyrightable' is the is the only 15 letter word that can be spelled without repeating any letter",
+            "Did you know? The word 'testify' derived from a time when men were required to swear on their testicles",
+            "Did you know? The word typewriter is the longest word that can be typed using only the top row of a keyboard",
+            "Did you know? That you can spell the word 'level' the same backwards",
+            "Did you know? Madonna and Michael Jackson were both born in 1958",
+            "Did you know? Almonds are members of the peach family",
+            "Did you know? An egg contains every vitamin except vitamin C",
+            "Did you know? Owls can't move their eyes from side to side",
+            "Did you know? You take over 23,000 breaths everyday",
+            "Did you know? Gold never erodes",
+            "Did you know? Scorpions glow under ultra violet light",
+            "Did you know? When water freezes it expands by 9%",
+            "Did you know? Ants stretch when they wake up in the morning",
+            "Did you know? Your foot and your forearm are the same length",
+            "Did you know? Diamonds are the hardest natural substance",
+            "Did you know? 111,111,111 x 111,111,111 = 12,345,678,987,654,321",
+            "Did you know? The longest possible eclipse of the sun is 7.31 minutes",
+            "Did you know? Halley’s comet passes the Earth every 76 years (the next time it will return will be 2062)",
+            "Did you know? There is no sound in space"};
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(FeedBackActivity.this, MainAppActivity.class));
+        finish();
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fb_activity_feed_back);
+
+        TVfacts = (TextView) findViewById(R.id.TVfacts);
+    }
+
+
+    //WILL GENERATE THE RANDOM FACT FROM THE ARRAY "facts"
+    public void generateFact(View view) {
+        int length = facts.length;
+
+        for (int i = 0; i < length; i++)
+        {
+            int rand = (int) (Math.random() * length);
+
+            TVfacts.setText(facts[rand]);
+            TVfacts.setTextColor(Color.BLACK);
+            TVfacts.setTextSize(25);
+        }
+    }
+}

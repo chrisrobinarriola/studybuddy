@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/woodbg2"
+    tools:context="com.apps.botrobs.studybuddy.AllHighScoresActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Animals"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVanimalsHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Engineering"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVengineeringHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Filipino"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVfilipinoHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Foods"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVfoodsHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="History"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVhistoryHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Places"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVplacesHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Programming"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVprogrammingHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="English"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVenglishHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Random"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVrandomHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="Science"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/TVscienceHS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="0"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!--SURVIVAL MODE-->
+
+    <!--<TextView
+        android:id="@+id/TVanimalsSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVengineeringSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVenglishSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVfilipinoSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVfoodsSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVhistorySurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVplacesSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVprogrammingSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVrandomSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>
+
+    <TextView
+        android:id="@+id/TVscienceSurvivalHS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name of the score"/>-->
+
+</LinearLayout>

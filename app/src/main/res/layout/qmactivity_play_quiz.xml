@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/woodbg2"
+    tools:context="com.apps.botrobs.studybuddy.QuizMakerFeature.PlayQuiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/question_container"
+                android:scaleType="center"/>
+
+            <TextView
+                android:id="@+id/play_quiz_question_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Question"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:id="@+id/answer_button_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="nextQuestion"
+        android:text="NEXT"
+        android:background="#3379e3"
+        android:textColor="#fff"
+        android:drawableRight="@drawable/ic_action_playqm"
+        android:visibility="invisible" />
+
+</RelativeLayout>

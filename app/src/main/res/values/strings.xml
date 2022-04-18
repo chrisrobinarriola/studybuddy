@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StudyBuddy</string>
+    <string name="quiz_name_hint">Name of the quiz</string>
+    <string name="quiz_description">Description</string>
+    <string name="question_name">Question</string>
+    <string name="stats_text">So far you have attempted to solve %1$d quizzes. Doing so, you were asked %2$d questions and answered %3$d of them correctly. That means that you have answered correctly %4$d percent of the time.</string>
+    <string name="no_stats_text">You haven\'t played yet!</string>
+    <string name="title_activity_sample">SampleActivity</string>
+
+    <string name="aboutCardView">
+        StudyBuddy is a quiz application that allows you to create your own quiz!\n\n
+
+        StudyBuddy has a lot of categories and has a lots of questions.\n\n
+        This app was made using android studio native.\n\n
+
+        This app still has a lot to improve especially the design.\n
+        The team will continue developing this application even the final presentation is done.
+    </string>
+
+    <string name="theTutorial">
+        StudyBuddy can now be your best friend for your upcoming quizzes and exams!
+        You can create a quiz by clicking the create button at the bottom.\n\n
+
+        The button below will take to the form that will allow\n you to create unlimited questions!\n
+        You can also edit and delete your made quizzes \n on your quiz menu!\n\n
+
+        You can play your quizzes by clicking play at the top.\n\n
+
+        StudyBuddy can now be your best friend for your upcoming quizzes and exams!
+        You can create a quiz by clicking the create button at the bottom.\n\n
+
+        The button below will take to the form that will allow\n you to create unlimited questions!\n
+        You can also edit and delete your made quizzes \n on your quiz menu!\n\n
+
+        You can play your quizzes by clicking play at the top.\n\n
+
+    </string>
+    <string name="theTutorialQuizMenu">
+        StudyBuddy can now be your best friend for your upcoming quizzes and exams!
+        You can create a quiz by clicking the create button at the bottom.\n\n
+
+        1) Create a question by clicking the create button below.\n\n
+2) Name the quiz that you want to make.\n\n
+3) Create questions for the quiz by clicking add question.\n\n
+4) Question field is required to as well as the answers.\n\n
+5) You can also create a True or False question by toggling True or false.\n\n
+6) You can set the answer as True by toggling the True button (false is the default answer).\n\n
+7) When you are done inserting questions for the quiz, you can hit the finish button to finally create the quiz!\n\n
+
+        You can play your quizzes by clicking play at the quiz maker menu.\n\n
+
+    </string>
+    <string name="gameRulesMath">
+        You will be given unlimited math questions before the quiz ends.\n\n
+
+Answer the questions as fast as you can.\n\n
+
+You have 30 seconds to answer all the questions.\n\n
+    </string>
+    <string name="gameRules">
+        You will be given 10 questions based on the category.\n\n
+
+You only have 10 seconds to answer each question.\n\n
+
+The score will depend on how fast you answer the question.\n\n
+    </string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="50dp"
+    android:gravity="top|center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Rules"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/gameRulesMath"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#000fff"
+        android:text="Start"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/TVexitRule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="EXIT"
+        android:textColor="#ff0000"
+        android:textSize="20sp"/>
+
+</LinearLayout>
